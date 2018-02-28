@@ -1,0 +1,5 @@
+Contents
+    ├─ apk			: directory including apk files
+    ├─ bin			: directory including memtester binary
+    ├─ result		: directory for test result
+    └─ script		: directory including test script

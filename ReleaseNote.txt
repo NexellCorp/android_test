@@ -1,0 +1,4 @@
+Release Note :
+ 2017-03-09 : Released by Seoji Kim
+  1. Add apk, memtester binary, script for auto BSP basic test.
+  2. Add README.txt, ReleaseNote.txt, Usage.txt, directory.txt.

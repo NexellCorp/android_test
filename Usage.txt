@@ -1,0 +1,21 @@
+Usage: ./test.sh [-t <test name>] [-i <wifi ssid> -p <wifi password>] [-d <dist result directory name>] [-q <true> (for AVN)] [-o <setting option>]
+
+- Available test name: all, wifi, webview, recorder, camera, camera_rec, display, performance, fac_reset,
+	ota, cpu_freq, antutu_video, 3d_mark, a1_sd, stability, game, multi_cap, touch, wifi_analyze, cpu_z,
+	mxplayer, memtest, youtube
+- Available settings option: awake, dis_rotation
+
+Test 'all' include all component of test list except OTA test.
+You need to OTA upgrade test after test 'all' done.
+
+Test 'webview' run test script for General in basically.
+For test in AVN, use -q option.
+
+(Example)
+	./test.sh -t wifi -i RND_WiFi_2.4Ghz -p nexellrnd
+	./test.sh -t webview -i RND_WiFi_2.4Ghz -p nexellrnd
+	./test.sh -t webview -i RND_WiFi_2.4Ghz -p nexellrnd -q true
+	./test.sh -t ota -a nougat-nexell -s s5p6818 -d result-s5p4418-avn_ref-dist
+	./test.sh -t all -i RND_WiFi_2.4Ghz -p nexellrnd -o dis_rotation
+	./test.sh -t all -i RND_WiFi_2.4Ghz -p nexellrnd -o dis_rotation -q true
+	./test.sh -o awake
